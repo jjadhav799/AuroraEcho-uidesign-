@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Enterprise iAurora Design System - Light Theme Only */
+    --background: 0 0% 98%;
+    --foreground: 224 12% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 12% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 12% 15%;
+
+    --primary: 232 88% 66%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 25% 95%;
+    --secondary-foreground: 224 12% 15%;
+
+    --muted: 230 20% 96%;
+    --muted-foreground: 224 8% 55%;
+
+    --accent: 232 88% 66%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 230 15% 90%;
+    --input: 230 15% 90%;
+    --ring: 232 88% 66%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 224 12% 15%;
+    --sidebar-primary: 232 88% 66%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 232 60% 97%;
+    --sidebar-accent-foreground: 232 88% 66%;
+    --sidebar-border: 230 15% 90%;
+    --sidebar-ring: 232 88% 66%;
+
+    /* Stats card colors */
+    --stat-blue: 232 88% 66%;
+    --stat-green: 142 76% 36%;
+    --stat-purple: 270 70% 60%;
+    --stat-orange: 25 95% 53%;
+  }
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
